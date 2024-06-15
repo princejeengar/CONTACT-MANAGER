@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Home</title>
+</head>
+<body>
+	<section>
+
+		<div class="container">
+			<div class="card">
+				<div class="card-body text-center">
+
+					<form action="#" th:action="@{/user/process-password}"
+						th:method="post">
+						<h1 class="text-center ">You can change your profile password here</h1>
+						Enter Your old Password:<br> 
+						<input type="password"
+							name="oldPassword" />
+							<br> <br> Enter new Password:<br>
+						<input type="password" name="newPassword" /> <br> <br>
+						Re-enter new Password:<br> 
+						<input type="password"
+							name="reEnterPassword" /> <br> <br>
+						<div class="btn ">
+							<button type="submit" class="btn btn-info text-white btn-md"
+								href="#">Change Password</button>
+						</div>
+						
+					</form>
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+	</section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" th:replace="~{normal/base::layout(~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>About Page</title>
+</head>
+<body>
+	<section>
+					<div class="container text-center">
+			<div class="card">
+				<div class="card-body">
+
+					<div class="container">	
+
+						<img style="height: 200px; width: 200px;"
+							class="my_profile_picture " src="#"
+							th:src="@{'/img/'+${user.imageUrl}}" alt="Profile image" />
+
+					</div>
+				</div>
+				<div>
+					<h3 class="text-center mt-3 text-secondary font-italic font-weight-light">Welcome to smart contact manager 
+					<p>here you can easily manage your contact in smarter way</p></h3>
+				</div>
+
+				<div class="btn mt-3 ">
+					<a href="#" th:href="@{/user/addcontact}" class="btn btn-info text-white btn-md">Start
+						Adding Your Contact</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
